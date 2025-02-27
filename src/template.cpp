@@ -47,18 +47,18 @@ typedef unsigned long long ull;
 
 #pragma endregion
 
-void solve() {}
+// void solve() {}
 
-int main()
-{
-    SPEED;
+// int main()
+// {
+//     SPEED;
 
-    int tests = 1;
-    cin >> tests;
-    while (tests--)
-    {
-        solve();
-    }
+//     int tests = 1;
+//     cin >> tests;
+//     while (tests--)
+//     {
+//         solve();
+//     }
 
-    return 0;
-}
+//     return 0;
+// }

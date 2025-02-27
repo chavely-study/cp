@@ -7,10 +7,11 @@
 *.jpg
 
 # VSCode folder
-*/.vscode
+*.vscode/
 
 # Private solutions
 *private/
+*reference/
 
 # Executables
 *.out
