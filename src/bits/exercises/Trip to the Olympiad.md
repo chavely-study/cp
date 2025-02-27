@@ -41,12 +41,12 @@ print(a << " " << b << " " << c);
    * b ^ c = 0...0y~(y...y)
    * (a ^ c) + (b ^ c) = 0..01...1 (pues en cada bit de cada sumando si hay un 0 en uno habrá un 1 en el otro, luego en la suma todos son 1s).
    * Finalmente: (a ^ b) + ((a ^ c) + (b ^ c)) = 0..01..1 + 0..01...1 = 2 * sumatoria(i, 0, k)(1 >> i) que es el máximo valor posible para la función.
-9. Para hallar k se utilizó el siguiente análisis: si todos los bits son iguales de k en aadelante, entones al hacer xor r y l se volverán 0. Y como el k-ésimo es 1 en r y 0 el l, se volverá 1 en el xor. Como la función __builtin_clz(x) devuelve la cantidad de ceros a la izquierda en la representación en binario de un número, y los int tiene 32 bits para hallar k basta hacer 31 - __builtin_clz(x).
+9. Para hallar k se utilizó el siguiente análisis: si todos los bits son iguales de k en aadelante, entones al hacer xor r y l se volverán 0. Y como el k-ésimo es 1 en r y 0 el l, se volverá 1 en el xor. Como la función __builtin_clz(x) devuelve la cantidad de ceros a la izquierda en la representación en binario de un número, y los int tiene 32 bits para hallar k basta hacer 31-__builtin_clz(x).
 10. En el or todo lo que está a la izquierda del k-ésimo bit se queda como en todos los números del intervalo, el k-ésimo se queda como 0 pues es cero en el antecesor de dos a la k y es cero en el menor elemento del intervalo y del k-ésimo en adelante se vuelven 1 pues son 1 en el antecesor de dos a la k. Luego queda el antecesor del primer multiplo de dos a la k del intervalo en a, basta sumarle uno para obtener dicho multiplo en b y como c puede ser cualquier número del intervalo, se toma el menor, y si a es el menor, b no puede ser el mayor por tanto se toma c como el mayor elemento del intervalo. Y problema resuelto.
 
 ## Complejidad
 
-O(1) pq estoy cansada hoy. Mañana u horita lo arreiglo. Na mentira, todos los trabajos con bits en el código no son más de O(32) = O(1) y la suma y la comparación también es O(1). Finalmente la solución es O(1).
+O(1): Todos los trabajos con bits en el código no son más de O(32) = O(1) y la suma y la comparación también es O(1). Finalmente la solución es O(1).
 
 ## Link
 
