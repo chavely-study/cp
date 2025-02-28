@@ -17,11 +17,15 @@ typedef unsigned long long ull;
     ios::sync_with_stdio(0); \
     cin.tie(0)
 
+#define big_number (int)(1e9 + 7)
+
+#define not_so_big_number (int)(3 * 1e5)
+
 #define print(x) cout << x << '\n'
 
 #define all(v) v.begin(), v.end()
 
-#define mod(x) x %= (int)(1e9 + 7)
+#define mod(x) x %= (int)(big_number)
 
 #define reverse(x) reverse(all(x))
 
