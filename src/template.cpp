@@ -17,6 +17,8 @@ typedef unsigned long long ull;
     ios::sync_with_stdio(0); \
     cin.tie(0)
 
+#define tow_power_1e6 1048576
+
 #define big_number (int)(1e9 + 7)
 
 #define not_so_big_number (int)(3 * 1e5)
