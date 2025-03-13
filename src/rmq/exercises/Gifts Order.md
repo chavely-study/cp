@@ -41,6 +41,8 @@ Apuntes: En lo adelante se considerará 'M' como máximo, 'm' como mínimo, 'l' 
 * Hay q preguntas, y por cada una hay que leer dos elementos de la entrada (O(1)), actualizar los segment trees (O(log n)), e imprimir el máximo entre ra[1] y ba[1]; luego la complejidad queda en O(q log n).
 * La complegidad total es la suma de las anteriores, q ue se calcula como la mayor de ellas, que es O ( n log n ).
 
+(@_@)
+
 ## Link
 
 [Gifts Order](https://codeforces.com/contest/2057/problem/D "Gifts Order")
