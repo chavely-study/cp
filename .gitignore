@@ -1,17 +1,19 @@
-# LaTeX files and images
+# LaTeX files
 *.tex
 *.aux
 *.log
 *.toc
 *.gz
-*.jpg
 
 # VSCode folder
 *.vscode/
 
 # Private solutions
 *private/
+
+# Reference images
 *reference/
+*reference/.jpg
 
 # Executables
 *.out
